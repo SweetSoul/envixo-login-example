@@ -1,0 +1,311 @@
+@import url('http://fonts.cdnfonts.com/css/sf-ui-text-2');
+
+html, body{
+    font-family: 'SF UI Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333333;
+}
+
+.fullHeight{
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.formCol{
+    max-width: 40vw;
+    margin: 5vh 0 5vh 3vw;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #3333331F;
+    min-height: 90vh;
+}
+
+.forgotPass{
+    font-size: 16px!important;
+    color: #333;
+    text-decoration: underline;
+}
+
+.colorPri{
+    color: #1ABC9C;
+}
+
+h1.fontSizer{
+    font-size: 22px;
+}
+
+p.fontSizer{
+    font-size: 16px;
+}
+
+.btnLogin{
+    background-color: #1ABC9C!important;
+    color: #fff!important;
+    border: none!important;
+    border-radius: 10px!important;
+    font-size: 18px!important;
+    width: 160px;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    font-weight: 700!important;
+    transition: all 0.3s!important;
+}
+
+.copyPos{
+    position: absolute;
+    bottom: 5px;
+    font-size: 14px;
+    font-weight: 300!important;
+}
+
+.btnLogin:hover{
+    background-color: #15a084!important;
+    transform: scale(1.05);
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    border-color: #dc3545!important;
+}
+
+.invalidCred{
+    color: #dc3545;
+    font-size: 1.15em;
+    display: none;
+}
+
+.showError{
+    display:block;
+}
+
+.transition{
+    transition: all 1s ease-in-out!important;
+    z-index: 5;
+}
+
+.activeCadastro{
+    color: #333!important;
+    font-size: 22px!important;
+    background-color: rgba(0,0,0,0)!important;
+    border: none!important;
+    font-weight: bold!important;
+    transform: translateX(0)!important;
+    cursor: default!important;
+}
+
+.activeCadastro:focus{
+    box-shadow: none!important;
+    outline: 0!important;
+}
+
+.inactiveCadastro{
+    color: #C4C4C4!important;
+    font-size: 22px!important;
+    background-color: rgba(0,0,0,0)!important;
+    transform: translateX(515%);
+    border: none!important;
+    font-weight: 400!important;
+}
+
+.inactiveLogin{
+    color: #C4C4C4!important;
+    font-size: 22px!important;
+    background-color: rgba(0,0,0,0)!important;
+    border: none!important;
+    font-weight: 400!important;
+    transform: translateX(620%);
+}
+
+.activeLogin{
+    color: #333!important;
+    font-size: 22px!important;
+    background-color: rgba(0,0,0,0)!important;
+    border: none!important;
+    transform: translateX(-135%);
+    font-weight: bold!important;
+    cursor: default!important;
+}
+
+.activeLogin:focus{
+    box-shadow: none!important;
+    outline: 0!important;
+}
+
+.lineCadastro{
+    color: #1ABC9C;
+    background-color: #1ABC9C;
+    height: 4px;
+    text-align: left;
+    width: 100px;
+    border-radius: 100px;
+    margin: -5px 0 25px 10px;
+    transition: width 1s ease-in-out;
+}
+
+.lineLogin{
+    width: 65px;
+}
+
+.slideIndicators{
+    background-color: #A8B4B1!important;
+    height: 15px!important;
+    width: 15px!important;
+    padding: 0!important;
+    border-radius: 100%!important;
+    border: none!important;
+    cursor: pointer!important;
+}
+
+.activeCarousel{
+    background-color: #1ABC9C!important;
+    cursor: default!important;
+}
+
+.slideIndicators:focus{
+    outline: 0!important;
+}
+
+.firstIndicator{
+    position: absolute;
+    left: 47%;
+    bottom: -250%;
+}
+
+.secIndicator{
+    position: absolute;
+    left: 50%;
+    bottom: -250%;
+}
+
+.form-control{
+    box-shadow: 0px 0px 6px #3333330F!important;
+    border: 0.2px solid #c4c4c4!important;
+    border-radius: 8px!important;
+}
+
+.styleSelect{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='960px' height='560px' viewBox='0 0 960 560' fill='%231ABC9C' enable-background='new 0 0 960 560' xml:space='preserve'%3E%3Cg id='Rounded_Rectangle_33_copy_4_1_'%3E%3Cpath d='M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937 c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937 c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+    background-position: right .2em top 55%;
+    /* icon size, then gradient */
+    background-size: 1.8em auto;
+}
+
+.styleSelect::-ms-expand{
+    display: none;
+}
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 100ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 100ms;
+}
+
+.submitBg{
+    background-color: #1ABC9C;
+    position: absolute;
+    width: 160px;
+    border-radius: 10px;
+    bottom: 35%;
+    left: 50%;
+    transform:translate(calc(50% - 160px), 0);
+    z-index: 5;
+    transition: transform .8s ease-in-out .2s!important;
+}
+
+.submitBgLogin{
+    transform:translate(calc(50% - 160px), -100px);
+}
+
+.transitionForms{
+    transition: opacity .8s ease-in-out .2s, transform .8s ease-in-out .2s;
+}
+
+.hiddenCadastro{
+    opacity: 0!important;
+    transform: translateY(-20%);
+    z-index: 0;
+}
+
+.shownCadastro{
+    opacity: 1!important;
+    transform: translateY(0);
+    z-index: 2;
+}
+
+.hiddenLogin{
+    opacity: 0!important;
+    transform: translateY(-130%);
+    z-index: 0;
+}
+
+.shownLogin{
+    opacity: 1!important;
+    transform: translateY(-150%);
+    z-index: 2;
+}
+
+.transitionSlides{
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.activeSlide{
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+
+.inactiveSlide{
+    opacity: 0;
+    transform: translate(-10%, -10%)
+}
+
+.activeSlide2{
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+
+.inactiveSlide2{
+    opacity: 0;
+    transform: translate(10%, 10%)
+}
+
+/* ------------- Small Screens ------------- */
+@media (max-width: 1400px) and (min-height: 700px){
+    .inactiveCadastro{
+        transform: translateX(320%);
+    }
+    
+    .inactiveLogin{
+        transform: translateX(350%);
+    }
+    
+    .activeLogin{
+        transform: translateX(-135%);
+    }
+
+    .submitBg{
+        bottom: 20%;
+        transform:translate(calc(50% - 160px), 0);
+    }
+    
+    .submitBgLogin{
+        transform:translate(calc(50% - 160px), -90px);
+    }
+
+}
