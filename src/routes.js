@@ -14,11 +14,11 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 );
 
 const Routes = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={'/envixo-test'}>
     <Switch>
       <Route exact path="/" component={Login} />
       <PrivateRoute path="/dashboard" component={Dashboard} />
-      <Route path="*" component={() => <h1>Page not found</h1>} />
+      <Route path="*" component={() => <h1> 404 - Page not found</h1>} />
     </Switch>
   </BrowserRouter>
 );

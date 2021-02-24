@@ -1,9 +1,7 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import '../styles/bootstrap.min.css';
 import '../styles/bootstrap-grid.min.css';
 import '../styles/bootstrap-reboot.min.css';
-import '../pages/Dashboard.css';
 
 function Dashboard () {
 

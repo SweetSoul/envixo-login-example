@@ -7,10 +7,6 @@ import Button from 'react-bootstrap/Button';
 
 export default function Slider() {
 
-    function delay(){
-        setTimeout(changeSlide(), 4000);
-    };
-
     function changeSlide(){
         if(document.getElementById("slideRef").classList.contains("activeSlide")) {
             document.getElementById("slide2").classList.add("activeSlide2")
@@ -57,26 +53,6 @@ export default function Slider() {
 
     return(
         <Container className="d-flex align-items-center justify-content-center mw-100 p-5">
-            {/*
-            <Carousel 
-                interval={3000}
-                fade={true}
-            >
-                <Carousel.Item>
-                    <Image 
-                    className="d-block w-100"
-                    src="https://sweetsoul.sirv.com/Images/Envixo/image_01.svg"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Image 
-                    className="d-block w-100"
-                    src="https://sweetsoul.sirv.com/Images/Envixo/image_02.svg"
-                    />
-                </Carousel.Item>
-            </Carousel>
-            */}
-
             <Image 
             className="position-absolute w-90 slide1 activeSlide transitionSlides"
             id="slideRef"

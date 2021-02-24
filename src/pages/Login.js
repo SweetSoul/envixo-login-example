@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import '../pages/Login.css';
 import FormikLogin from '../components/FormikLogin';
 import FormikCadastro from '../components/FormikCadastro';
