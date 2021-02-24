@@ -3,4 +3,4 @@
 Já consta build mais nova configurada para rodar na raiz '/'.
 Basta acessar a pasta 'build'
 
-[https://pedrofront.dev/envixo-test](Live Demo)
+Live Demo: https://pedrofront.dev/envixo-test
